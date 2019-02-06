@@ -23,9 +23,9 @@ router.get("/about/contact", (req, res) => {
 
 router.post("/about/contact", (req, res) => {
   var smtpTrans = nodemailer.createTransport({
-    host:"smtp.gmail.com",
-    port: 465,
-    secure: true,
+    host:"smtp-mail.outlook.com",
+    port: 587,
+    secure: false,
     auth: {
       user: keys.nodemailerUser,
       pass: keys.nodemailerPass
