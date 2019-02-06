@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+<%# Generating the source links for the specific portfolio %>
+<% var imgPath = [];%>
+<% var i = 1; %>
+<% portfolioFound.forEach((portfolio) => { %>
+  <% if(portfolio.imageLocation == i){ %>
+    <% imgPath.push(portfolio.imagePath) %>
+    <% i++ %>
+  <% } %>
+<% }); %>
+
+<%# Determining which portfolio should be loaded when "next" is clicked%>
+<% var portfolioArray = []; %>
+<% var nextPortfolio; %>
+<% allPortfolios.forEach((portfolios) => { %>
+  <% if(portfolioArray.indexOf(portfolios.portfolioName) == -1){ %>
+    <% portfolioArray.push(portfolios.portfolioName); %>
+  <% }%>
+<% }); %>
+<% if(portfolioArray.indexOf(portfolioFound[0].portfolioName) == (portfolioArray.length - 1)){ %>
+  <% nextPortfolio = "/portfolio/" + portfolioArray[0]%>
+<% } else { %>
+  <% nextPortfolio = "/portfolio/" + portfolioArray[ portfolioArray.indexOf(portfolioFound[0].portfolioName) + 1] %>
+<% }%>
+<div class="container">
+  <h2 class="pageTitle"><%= portfolioFound[0].portfolioName %></h2>
+</div>
+<div class="container">
+  <div class="galleryGrid">
+    <img src="<%= imgPath[0]%>" alt="" class="galleryImg galleryImg1">
+    <img src="<%= imgPath[1]%>" alt="" class="galleryImg galleryImg2">
+    <img src="<%= imgPath[2]%>" alt="" class="galleryImg galleryImg3">
+    <img src="<%= imgPath[3]%>" alt="" class="galleryImg galleryImg4">
+    <img src="<%= imgPath[4]%>" alt="" class="galleryImg galleryImg5">
+    <img src="<%= imgPath[5]%>" alt="" class="galleryImg galleryImg6">
+  </div>
+
+    <p class="next"><a href=<%= nextPortfolio %>>NEXT</a></p>
+
+</div>
+
+<% include ../partials/footer %>

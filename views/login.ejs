@@ -1,0 +1,18 @@
+<% include partials/header %>
+
+<div class="container">
+  <h2 class="pageTitle">Login</h2>
+</div>
+<div class="container contactFormContainer">
+  <p>
+    <form class="contactForm" action="/login" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <div >
+        <button type="submit" class="sendButton">LOGIN</button>
+      </div>
+    </form>
+  </p>
+</div>
+
+<% include partials/footer %>

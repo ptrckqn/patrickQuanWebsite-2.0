@@ -1,0 +1,685 @@
+/* Mobile styles */
+@media screen and (max-width: 1024px){
+  .aboutContent{
+    text-align: left;
+  }
+
+  .aboutPic{
+    width: 45%;
+  }
+
+  .blogDate{
+    font-size: 1.75em;
+  }
+
+  .blogLink{
+    margin: 15% auto;
+  }
+
+  .blogTitle{
+    font-size: 2.75em;
+  }
+
+  .closeIcon, .menuIcon{
+    left: 10%;
+    top: 2.5%;
+    width: 50px;
+  }
+
+  .contactForm input{
+    height: 75px;
+  }
+
+  .contactForm input, .contactForm textarea{
+    width: 80%;
+    margin: 15px 0;
+    font-size: 2em;
+  }
+
+  .contactForm .sendButton{
+    margin-top: 15px;
+  }
+
+  .contactForm textarea{
+    height: 500px;
+  }
+
+  .container{
+    margin: 0 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+
+  .enterButton{
+    height: 75px;
+    width: 175px;
+    font-size: 35px;
+  }
+
+  h5{
+    font-size: 2.5em;
+  }
+
+  header{
+    position: fixed;
+  }
+
+  .fullLogo{
+    margin-top: 2%;
+    width: 25%;
+  }
+
+  .galleryGrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(35, 10vw);
+    grid-gap: 50px;
+  }
+
+  .galleryImg1{
+    grid-row-start: 1;
+    grid-row-end: 8;
+  }
+
+  .galleryImg2{
+    grid-row-start: 8;
+    grid-row-end: 12;
+  }
+
+  .galleryImg3{
+    grid-row-start: 12;
+    grid-row-end: 20;
+  }
+
+  .galleryImg4{
+    grid-row-start: 20;
+    grid-row-end: 24;
+  }
+
+  .galleryImg5{
+    grid-row-start: 24;
+    grid-row-end: 32;
+  }
+
+  .galleryImg6{
+    grid-row-start: 32;
+    grid-row-end: 36;
+  }
+
+  .landingIcons{
+    margin-bottom: 10%;
+  }
+
+  .landingIcons a img{
+    width: 75px;
+  }
+
+  .landingSquareLogo{
+    margin-bottom: 3%;
+    width: 150px;
+  }
+
+  .navLink, .navLinkSecondary{
+    margin-right: 25%;
+  }
+
+  .navLinks{
+    font-size: 3em;
+    margin-top: 35%;
+  }
+
+  .next a{
+    font-size: 3em;
+  }
+
+  .nextButton{
+    margin-top: 5%;
+    width: 25%;
+  }
+
+  p{
+    font-size: 1.75em;
+  }
+
+  .pageTitle{
+    margin-top: 15%;
+    font-size: 5em;
+  }
+
+  .portfolioName{
+    font-size: 3.5em;
+  }
+
+  .programmingContent{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 50px;
+    justify-items: center;
+  }
+
+  .sendButton{
+    height: 75px;
+    width: 175px;
+    font-size: 35px;
+  }
+
+  .splitView{
+    font-size: 75%;
+    margin: 15% auto;
+  }
+
+  .squareLogo .landingSquareLogo{
+    margin-top: 50%;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px){
+  .aboutContent{
+    text-align: justify;
+  }
+
+  .aboutPic{
+    width: 25%;
+  }
+
+  .blogLink{
+    margin: 5% auto;
+  }
+
+  .blogTitle{
+    font-size: 1.5em;
+  }
+
+  .closeIcon, .menuIcon{
+    left: 10%;
+    top: 5%;
+    width: 25px;
+  }
+
+  .contactForm input{
+    height: 35px;
+  }
+
+  .contactForm input, .contactForm textarea{
+    width: 50%;
+    margin: 7px 0;
+    font-size: 1em;
+  }
+
+  .contactForm textarea{
+    height: 200px;
+  }
+
+  .container{
+    margin: 0 10%;
+    padding-top: 7%;
+    padding-bottom: 7%
+  }
+
+  .enterButton{
+    height: 35px;
+    width: 75px;
+    font-size: 15px;
+  }
+
+  .fullLogo{
+    margin-top: 0.5%;
+    width: 15%;
+  }
+
+  h5{
+    font-size: 1.75em;
+  }
+
+  .galleryGrid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 10vw);
+    grid-gap: 10px;
+  }
+
+  .galleryImg1{
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .galleryImg2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .galleryImg3{
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .galleryImg4{
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+
+  .galleryImg5{
+    grid-row-start: 3;
+    grid-row-end: 7;
+  }
+
+  .galleryImg6{
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+
+  .landingIcons{
+    margin-bottom: 1%;
+  }
+
+  .landingIcons a img{
+    width: 30px;
+  }
+
+  .landingSquareLogo{
+    margin-bottom: 3%;
+    width: 80px;
+  }
+
+  .navLinks{
+    font-size: 2.25em;
+    margin-top: 20%;
+  }
+
+  .navLink, .navLinkSecondary{
+    margin-right: 55%;
+  }
+
+  .next a{
+    font-size: 3em;
+  }
+
+  .nextButton{
+    margin-top: 3%;
+    width: 10%;
+  }
+
+  .pageTitle{
+    font-size: 3.5em;
+  }
+
+  .portfolioName{
+    font-size: 1.75em;
+  }
+
+  .programmingContent{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+  }
+
+  .programmingContent div{
+    height: 25vw;
+  }
+
+  .sendButton{
+    height: 35px;
+    width: 75px;
+    font-size: 15px;
+  }
+
+  .splitView{
+    margin: 7% auto;
+  }
+
+  .squareLogo .landingSquareLogo{
+    margin-top: 25%;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.aboutContent{
+  font-weight: 300;
+  padding: 0 15%;
+}
+
+#alberta{
+  background-image: url("../uploads/albertaBackground.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.blogBody{
+  white-space: pre-wrap;
+}
+
+.blogDate{
+  font-weight: 400;
+  color: #AFAFAF;
+}
+
+.blogTitle{
+  font-weight: 300;
+  color: black;
+}
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100vw;
+  height: 100%;
+}
+
+.closeIcon, .menuIcon{
+  cursor: pointer;
+  position: fixed;
+  z-index: 99;
+}
+
+.contactForm input, .contactForm textarea{
+  border: 2px solid #d8d8d8;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+.contactForm .sendButton{
+  cursor: pointer;
+  font-weight: 300;
+  border: 3px solid black;
+  border-radius: 3px;
+  background: none;
+  color: black;
+}
+
+.contactForm textarea{
+  resize: none;
+}
+
+.contactFormContainer{
+  text-align: center;
+}
+
+.content{
+  width: 100%;
+}
+
+.enterButton{
+  cursor: pointer;
+  font-weight: 300;
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  background: none;
+  color: #ffffff;
+  transition: ease-in 0.3s
+}
+
+.enterButton:hover{
+  border: 3px solid white;
+  color: white;
+}
+
+.galleryGrid{
+  display: grid;
+}
+
+.galleryGrid .galleryImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3{
+  margin: 0;
+  margin-left: 3%;
+  padding-top: 50vh;
+}
+
+h4{
+  margin: 10px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h5{
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+header{
+  margin: 0;
+  text-align: center;
+  background: white;
+}
+
+.landing{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url("../uploads/landingBackground.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.landing p{
+  margin: 0;
+}
+
+.landingIcons{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.landingIcons a img{
+  margin: 0 3%;
+}
+
+li{
+  list-style: none;
+}
+
+.nav{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 0;
+  z-index: 98;
+  transition: all 0.3s;
+}
+
+.navContainer{
+  margin: 10% 7%;
+}
+
+.navHidden{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.navLink, .navLinkSecondary{
+  position: relative;
+  display: inline-block;
+}
+
+.navLinks{
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.navLinkSecondary{
+  font-style: oblique;
+  font-weight: 300;
+  font-size: 0.75em;
+}
+
+.navLinksHidden{
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 25%;
+  transition: all 0.3s;
+}
+
+.noScroll{
+  overflow: hidden;
+}
+
+.next{
+  text-align: center;
+}
+
+.next a{
+  color: black;
+  font-weight: 300;
+}
+
+.portfolioContent{
+  cursor: pointer;
+  height: 100vh;
+}
+
+.portfolioContent:hover > .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color:#000;
+  opacity:0.3;
+  transition: all 0.3s;
+}
+
+.portfolioName{
+  text-transform: uppercase;
+  color: white;
+}
+
+.programmingContent{
+  display: grid;
+}
+
+.squareLogo p{
+  text-align: center;
+}
+
+#sneakers{
+  background-image: url("../uploads/sneakersBackground.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#spotandluna{
+  background-image: url("../uploads/spotandlunaBackground.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#toronto{
+  background-image: url("../uploads/torontoBackground.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Nav menu underline */
+.navLink:after, .navLinkSecondary:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navLink:hover:after, .navLinkSecondary:hover:after{
+  width: 100%;
+  left: 0;
+}
+
+/* Programming side by side images */
+
+.panel{
+  position: absolute;
+  width: 100vw;
+  min-height: 45vw;
+  overflow: hidden;
+}
+
+.panel .pContent{
+  position: absolute;
+  width: 100vw;
+  min-height: 45vw;
+  color: #FFFFFF;
+}
+
+.panel .pDescription{
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.panel img{
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.pDescription p a{
+  color: black;
+}
+
+.splitView{
+  positive: relative;
+  width: 100%;
+  min-height: 45vw;
+  overflow: hidden;
+}
+
+.skewed .splitTop {
+  transform: skew(-30deg);
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .splitTop .pContent {
+  transform: skew(30deg);
+  margin-left: 1000px;
+}
+
+.splitBottom{
+  background-color: #A0A0A0;
+  z-index: 1;
+}
+
+.splitBottom .pDescription{
+  right: 5%;
+}
+
+.splitTop {
+  background-color: #ededed;
+  z-index: 2;
+  width: 50vw;
+}
+
+.splitTop .pDescription{
+  left: 5%;
+}

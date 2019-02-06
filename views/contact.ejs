@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<div class="container">
+  <h2 class="pageTitle">Contact Me</h2>
+</div>
+<div class="container contactFormContainer">
+  <p>Drop me a line and I'll get back to you.</p>
+  <p>
+    <form class="contactForm" action="contact" method="post">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" rows="3" required></textarea>
+      <div >
+        <button type="submit" class="sendButton">SEND</button>
+      </div>
+    </form>
+  </p>
+</div>
+
+<% include partials/footer %>

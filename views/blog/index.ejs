@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+<% var months = ["January", "February", "March", "Aprlil", "May", "June", "July", "August", "September", "October", "November", "December"] %>
+<div class="container">
+  <h2 class="pageTitle">Blog</h2>
+</div>
+  <% blogsFound.forEach((blogs) => { %>
+    <div class="blogLink">
+      <a href="/blog/<%= blogs.id%>">
+        <h4 class="blogTitle"><%= blogs.title %></h4>
+        <h4 class="blogDate"><%= months[blogs.date.getMonth()] + " " + blogs.date.getDate() + ", " + blogs.date.getFullYear()%></h4>
+      </a>
+    </div>
+    <% }); %>
+  </div>
+  <% include ../partials/footer %>

@@ -1,0 +1,13 @@
+<% include ../partials/header %>
+<% var months = ["January", "February", "March", "Aprlil", "May", "June", "July", "August", "September", "October", "November", "December"] %>
+
+<div class="container">
+  <h2 class="pageTitle"><%= blogFound.title %></h2>
+  <h4 class="blogDate"><%= months[blogFound.date.getMonth()] + " " + blogFound.date.getDate() + ", " + blogFound.date.getFullYear()%></h4>
+</div>
+<div class="container">
+  <div class="aboutContent">
+    <p class="blogBody"><%= blogFound.body%></p>
+  </div>
+</div>
+<% include ../partials/footer %>
