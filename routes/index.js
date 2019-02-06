@@ -53,22 +53,22 @@ router.get("/programming", (req, res) => {
 });
 
 //Authentication Routes
-router.get("/register", (req, res) => {
-  res.render("register");
-});
-
-router.post("/register", (req, res) => {
-  var newUser = new User({username: req.body.username});
-  User.register(newUser, req.body.password, function(err, user){
-    if(err){
-      console.log(err);
-    } else{
-      passport.authenticate("local")(req, res, () => {
-        res.redirect("/portfolio")
-      });
-    }
-  });
-});
+// router.get("/register", (req, res) => {
+//   res.render("register");
+// });
+//
+// router.post("/register", (req, res) => {
+//   var newUser = new User({username: req.body.username});
+//   User.register(newUser, req.body.password, function(err, user){
+//     if(err){
+//       console.log(err);
+//     } else{
+//       passport.authenticate("local")(req, res, () => {
+//         res.redirect("/portfolio")
+//       });
+//     }
+//   });
+// });
 
 router.get("/login", (req, res) => {
   res.render("login");
