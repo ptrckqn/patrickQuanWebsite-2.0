@@ -329,6 +329,24 @@
   .squareLogo .landingSquareLogo{
     margin-top: 25%;
   }
+
+  /* Nav menu underline */
+  .navLink:after, .navLinkSecondary:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navLink:hover:after, .navLinkSecondary:hover:after{
+    width: 100%;
+    left: 0;
+  }
 }
 
 a{
@@ -589,24 +607,6 @@ li{
   background-image: url("../uploads/torontoBackground.jpg");
   background-position: center;
   background-size: cover;
-}
-
-/* Nav menu underline */
-.navLink:after, .navLinkSecondary:after{
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.navLink:hover:after, .navLinkSecondary:hover:after{
-  width: 100%;
-  left: 0;
 }
 
 /* Programming side by side images */
