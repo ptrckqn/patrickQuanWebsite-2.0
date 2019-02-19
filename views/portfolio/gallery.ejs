@@ -17,11 +17,13 @@
     <% portfolioArray.push(portfolios.portfolioName); %>
   <% }%>
 <% }); %>
-<% if(portfolioArray.indexOf(portfolioFound[0].portfolioName) == (portfolioArray.length - 1)){ %>
-  <% nextPortfolio = "/portfolio/" + portfolioArray[0]%>
+<% var pLength = portfolioArray.length - 1; %>
+<% if(portfolioArray.indexOf(portfolioFound[0].portfolioName) == 0){ %>
+  <% nextPortfolio = "/portfolio/" + portfolioArray[pLength]%>
 <% } else { %>
-  <% nextPortfolio = "/portfolio/" + portfolioArray[ portfolioArray.indexOf(portfolioFound[0].portfolioName) + 1] %>
+  <% nextPortfolio = "/portfolio/" + portfolioArray[ portfolioArray.indexOf(portfolioFound[0].portfolioName) - 1] %>
 <% }%>
+
 <div class="container">
   <h2 class="pageTitle"><%= portfolioFound[0].portfolioName %></h2>
 </div>
