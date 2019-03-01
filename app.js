@@ -6,7 +6,7 @@ keys              = require("./config/keys"),
 indexRoutes       = require("./routes/index"),
 portfolioRoutes   = require("./routes/portfolio"),
 blogRoutes        = require("./routes/blog"),
-//User authentication
+//User authentication~`
 User              = require("./models/user"),
 passport          = require("passport"),
 LocalStrategy     = require("passport-local"),

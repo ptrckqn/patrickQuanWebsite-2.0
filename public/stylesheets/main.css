@@ -360,12 +360,6 @@ a{
   padding: 0 15%;
 }
 
-#alberta{
-  background-image: url("../uploads/albertaBackground.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
 .blogBody{
   white-space: pre-wrap;
 }
@@ -579,6 +573,11 @@ li{
   transition: all 0.3s;
 }
 
+.portfolioImage{
+  background-position: center;
+  background-size: cover;
+}
+
 .portfolioName{
   text-transform: uppercase;
   color: white;
@@ -592,22 +591,42 @@ li{
   text-align: center;
 }
 
+/* Portfolio Image Backgrounds */
+
+#alberta{
+  background-image: url("../uploads/albertaBackground.jpg");
+}
+
+#cafe16{
+  background-image: url("../uploads/cafe16Background.jpg");
+}
+
+#losangeles{
+  background-image: url("../uploads/losangelesBackground.jpg");
+}
+
+#maui{
+  background-image: url("../uploads/mauiBackground.jpg");
+}
+
+#newyork{
+  background-image: url("../uploads/newyorkBackground.jpg");
+}
+
 #sneakers{
   background-image: url("../uploads/sneakersBackground.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 #spotandluna{
   background-image: url("../uploads/spotandlunaBackground.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 #toronto{
   background-image: url("../uploads/torontoBackground.jpg");
-  background-position: center;
-  background-size: cover;
+}
+
+#villageicecream{
+  background-image: url("../uploads/villageBackground.jpg");
 }
 
 /* Programming side by side images */
